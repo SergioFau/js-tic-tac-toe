@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="main.css" rel="stylesheet" />
+</head>
+<body>
+    <script src="./4x4.js"></script>
+    <h1>Tic tac toe</h1>
+    <div style="display:inline-grid;">
+        <a href="index.html">3x3</a>
+        <button id="restart" onclick="nuevoJuego()">New game</button>
+        <button id="deshacerMovimiento" onclick="deshacerUltimoMovimiento()">Deshacer Ultimo Movimiento</button>
+        <button id="botonJugarMaquina" onclick="jugarContraMaquina()">Jugar contra la máquina</button>
+    </div>
+    <main>
+        <div class="container">
+            <div class="grow">
+                <div class="row">
+                    <div id="0" name="celda" class="cell" onclick="marcarCelda(0)"></div>
+                    <div id="1" name="celda" class="cell" onclick="marcarCelda(1)"></div>
+                    <div id="2" name="celda" class="cell" onclick="marcarCelda(2)"></div>
+                    <div id="3" name="celda" class="cell" onclick="marcarCelda(3)"></div>
+                </div>
+                <div class="row">
+                    <div id="4" name="celda" class="cell" onclick="marcarCelda(4)"></div>
+                    <div id="5" name="celda" class="cell" onclick="marcarCelda(5)"></div>
+                    <div id="6" name="celda" class="cell" onclick="marcarCelda(6)"></div>
+                    <div id="7" name="celda" class="cell" onclick="marcarCelda(7)"></div>
+                </div>
+                <div class="row">
+                    <div id="8" name="celda" class="cell" onclick="marcarCelda(8)"></div>
+                    <div id="9" name="celda" class="cell" onclick="marcarCelda(9)"></div>
+                    <div id="10" name="celda" class="cell" onclick="marcarCelda(10)"></div>
+                    <div id="11" name="celda" class="cell" onclick="marcarCelda(11)"></div>
+                </div>
+                <div class="row">
+                    <div id="12" name="celda" class="cell" onclick="marcarCelda(12)"></div>
+                    <div id="13" name="celda" class="cell" onclick="marcarCelda(13)"></div>
+                    <div id="14" name="celda" class="cell" onclick="marcarCelda(14)"></div>
+                    <div id="15" name="celda" class="cell" onclick="marcarCelda(15)"></div>
+                </div>
+            </div>
+            <div class="main__information">
+                <div>
+                    <div>Turno</div>
+                    <div id="siguienteTurno" class="turn-cell-o"></div>
+                </div>
+                <div style="margin: 50px;">
+                    <div>Movements</div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Orden</td>
+                                <td>Casilla</td>
+                                <td>Tipo</td>
+                            </tr>
+                        </thead>                       
+                    </table>
+                    <table id="tableRegistro2">
+                    </table>
+                </div>
+                <!-- <table>
+                    <thead></thead>
+                </table> -->
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
